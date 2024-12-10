@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Whack-a-Mole Game</h1>
+        <div class="info">
+            <p>Score: <span id="scored">0</span></p>
+            <p>Timer: <span id="timer">30</span></p>
+            <p>Top Score: <span id="top-scorer">0</span></p>
+        </div>
+        <button id="start-button">Start Game</button>
+        <div class="game-board">
+            <div class="hole" data-index="0"><div class="mole"></div></div>
+            <div class="hole" data-index="1"><div class="mole"></div></div>
+            <div class="hole" data-index="2"><div class="mole"></div></div>
+            <div class="hole" data-index="3"><div class="mole"></div></div>
+            <div class="hole" data-index="4"><div class="mole"></div></div>
+            <div class="hole" data-index="5"><div class="mole"></div></div>
+            <div class="hole" data-index="6"><div class="mole"></div></div>
+            <div class="hole" data-index="7"><div class="mole"></div></div>
+            <div class="hole" data-index="8"><div class="mole"></div></div>
+        </div>
+        <div id="game-over" class="hidden">
+            <p>Game Over!</p>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <button id="restart-button">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
